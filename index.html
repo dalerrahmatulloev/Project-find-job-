@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbarLeft">
+            <div class="navbarLeftDiv1"><h3>MAIN</h3></div>
+            <div class="navbarLeftDiv2"><h3>JOB SEARCH</h3></div>
+            <div class="navbarLeftDiv3"><h3>ADMIN</h3></div>
+            <div class="navbarLeftDiv4"><h3>MANAGE APPLICANTS</h3></div>
+        </div>
+        <div class="navbarRight">
+            <div class="main">
+                <h1 class="h1">Latest job</h1>
+                <div class="mainFilter">
+                    <form class="categoryFilter">
+                        <fieldset>
+                            <legend>Category</legend>
+                            <select name="category" id="">
+                                <option value="">All category</option>
+                                <option value="Frontend">Frontend</option>
+                                <option value="Backend">Backend</option>
+                            </select>
+                        </fieldset>
+                    </form>
+
+                    <form class="levelFilter">
+                        <fieldset>
+                            <legend>Experience level</legend>
+                            <select name="level" id="">
+                                <option value="">All level</option>
+                                <option value="Junior">Junior</option>
+                                <option value="Middle">Middle</option>
+                                <option value="Senior">Senior</option>
+                                <option value="Full-stack">Full-stack</option>
+                            </select>
+                        </fieldset>
+                    </form>
+                </div>
+                <form class="search" style="display: none;">
+                    <fieldset>
+                        <legend>search</legend>
+                        <input type="search" placeholder="Name, email, etc...">
+                    </fieldset>
+                </form>
+                <div class="mainCards"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="seeMoreDiv">
+        <div class="seeMoreGlav">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
